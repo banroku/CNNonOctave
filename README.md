@@ -1,5 +1,5 @@
-#CNN implementation from scratch on octave
-This project is Convolutional Neural Network(CNN) implementation 
+# CNN implementation from scratch on octave
+This project is Convolutional Neural Network(CNN) implementation master and dev are entirely different commit histories. git -f
 from scratch. 
 Test data is MNIST.  
 
@@ -16,7 +16,7 @@ started from early March, 2018
 ended around middle April, 2018
 
 
-#Brief introduction of usage
+# Brief introduction of usage
 There are two scirpts to conduct CNN training & validation. 
 - setEnvironment.m
 - learnByGeneralizedCNN.m
@@ -64,12 +64,12 @@ initialzeTheta: randomly initialze weight if Ture.
                 Else use weight trained by previous training. 
 
 
-#Something not implemented. 
+# Something not implemented. 
 1. Regulaziation
 It could be implemented by adding regularization term in 
 cost and gradient calculation with lambda...
 
-#Caution
+# Caution
 The caluculation use much of your machine power. 
 PC could freeze if you will try large scale test, especially: 
 - large model(deep layer, much channel, large conv. filter etc.)
