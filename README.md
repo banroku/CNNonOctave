@@ -28,7 +28,7 @@ Then, run learnByGeneralizedCNN.m to train CNN.
 After the training, it returns cost, accuracy for train/cv sets and also training time. 
 
 
-1. First run setEnvironment on your octave. 
+## 1. First run setEnvironment on your octave. 
 It loads mnist dataset and set several variables. 
 And it imports image package (to use im2col function in it). 
 The image package could be downloaded from octave-forge. 
@@ -58,7 +58,7 @@ Initial model shown below is very simple.
 
 Output layer is softmax.
 
-2. Then run learnByGeneralizedCNN.m
+## 2. Then run learnByGeneralizedCNN.m
 Here use stochastic gradient desent and parameters are following: 
 - batchSize: batchSize. 
 - iter: Epoch. 
