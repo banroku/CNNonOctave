@@ -8,10 +8,12 @@ by Prof Andrew Ng.
 
 Main purpose of this full scratch CNN implementation is 
 to learning basics of neural network and programing by myself. 
+
 This project would not be update any longer 
 since the aim was already acheived. 
 
 started from early March, 2018
+
 ended around middle April, 2018
 
 
@@ -20,19 +22,21 @@ There are two scirpts to conduct CNN training & validation.
 - setEnvironment.m
 - learnByGeneralizedCNN.m
 
-Firstly, run setEnvironment on your octave, 
-to loads mnist dataset and set CNN model. 
+Firstly, run setEnvironment on your octave, to load mnist dataset and set CNN model. 
+
 Then, run learnByGeneralizedCNN.m to train CNN. 
-After the training, it returns cost, accuracy, training time. 
+After the training, it returns cost, accuracy for train/cv sets and also training time. 
 
 
 1. First run setEnvironment on your octave. 
 It loads mnist dataset and set several variables. 
-It needs image package. 
+And it imports image package (to use im2col function in it). 
 The image package could be downloaded from octave-forge. 
+
     https://octave.sourceforge.io/packages.php
 
 CNN model could be customized by change model in this setEnvironment.m. 
+
 > %model of CNN
 > %col1: type of layer. 0=input, 1=conv, 2=pool, 3=affine, 4=ReLU. 
 > %col2: filter size for conv/pooling layer (any number for other layers)
@@ -56,10 +60,10 @@ Output layer is softmax.
 
 2. Then run learnByGeneralizedCNN.m
 Here use stochastic gradient desent and parameters are following: 
-batchSize: batchSize. 
-iter: Epoch. 
-lambda: regularization parameter (!not implemented)
-initialzeTheta: randomly initialze weight if Ture. 
+- batchSize: batchSize. 
+- iter: Epoch. 
+- lambda: regularization parameter (!not implemented)
+- initialzeTheta: randomly initialze weight if Ture. 
                 Else use weight trained by previous training. 
 
 
