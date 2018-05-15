@@ -1,6 +1,5 @@
 # CNN implementation from scratch on octave
-This project is Convolutional Neural Network(CNN) implementation master and dev are entirely different commit histories. git -f
-from scratch. 
+This project is Convolutional Neural Network(CNN) implementation  master and dev are entirely different commit histories. git -ffrom scratch. 
 Test data is MNIST.  
 
 This porject is written by octave as programing language, 
