@@ -1,0 +1,9 @@
+octave-workspace
+mnist.mat
+*.pdf
+*.swp
+*.mat
+!mymnist_trainingData.mat
+!mymnist_cvAndTestData.mat
+!mymnist_additional_trainingData.mat
+!mnist_mini.mat

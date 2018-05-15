@@ -1,0 +1,66 @@
+180320  01:30 total 01:30
+implemented generateTheta.m
+implementing convForward.m
+
+180322-25   03:00   total 04:30
+implemented convForward
+implemented poolingForward
+implemented affineForward (quick)
+implemented reluForward(quick)
+
+180325  02:00   
+learned design of backward propagation
+
+180326  20:30-21:30 total 05:30
+implemented affineBackward
+
+180327  05:00-06:30 total 07:00
+implementing convBackward. 
+next: to solve col2im problem. 
+
+180328  05:00-06:30 total 08:00
+implemented convBackward, poolBackward, reluBackward
+
+180328  20:30-21:30 total 09:00
+tested and completed forward propagation!
+tested backward propagation. looks working...
+next: softmax, then gradient checking. 
+
+180330  05:00-06:00 total 10:00
+implemented sofmax layer and calc J and delta
+next: gradient check: correct calculation of dtheta at each layer
+
+180331  05:45-06:15 total 10:30
+fixing gradient
+next: problem seems to be in affineBackward?
+
+180331 14:00-
+checking gradient....
+- Suppose boutput{6} and output{4} are correct, 
+  dtheta_math looks too large. 
+  (dtheta = boutput{6}' * output{4} looks being correct. 
+- Other hand, the math to derive dtheta_math also looks correct...
+Next: try (thetaPlus - thetaMinus)/2*delta ...
+
+180401 04:30 -   
+- dtheta_math was conversed with decreasing delta, 
+  thus no need to implement thetaMinus.
+- J and JPlus is nealy equal, indicating calc process of JPlus is correct. 
+- No mismatch in reshape/transpose process between affineForward and back. 
+- calculation of theta * input was correct. 
+- type of data were correct (all data were double). 
+
+Next: correcting softmax
+
+180402 04:30-06:30  total 12:30
+- corrected softmax. dtheta_math came close to dtheta. 
+- found cause: there was no initialization of thetaPlus before each adding of delta! corrected. 
+- fixed reluBackward.m
+- gradient checking completed (only boutput of convBackward was not validated)
+- generalizedCNN might be completed... 
+- revised learnByGeneralizedCNN and trainByGeneralizedCNN
+Next: try learnByGeneralizedCNN(model has to be changed. try batchNo = 1 and 10, small epockNo.
+
+180403 05:30-06:30  total 13:30
+- learning process of CNN worked!!!!!
+Next: complete predict.m and accuracy.m, and validate my CNN.
