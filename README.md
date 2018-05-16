@@ -37,7 +37,7 @@ The image package could be downloaded from octave-forge.
 
 CNN model could be customized by change model in this setEnvironment.m. 
 
-> %model of CNN
+> '''%model of CNN
 > %col1: type of layer. 0=input, 1=conv, 2=pool, 3=affine, 4=ReLU. 
 > %col2: filter size for conv/pooling layer (any number for other layers)
 > %col3: channel(filter) number for input/conv layer
@@ -50,7 +50,7 @@ CNN model could be customized by change model in this setEnvironment.m.
 >  1  3  2  4
 >  4  0  2  4
 >  2  2  2  2
->  3  0 10  1 ];
+>  3  0 10  1 ];'''
 
 Initial model shown below is very simple. 
 
